@@ -1,0 +1,32 @@
+{
+    "title": "Sales Lead Enrichment Agent",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "company_name": {
+            "title": "Company Name",
+            "type": "string",
+            "description": "The name of the company to enrich lead data for.",
+            "editor": "textfield"
+        },
+        "contact_person": {
+            "title": "Contact Person",
+            "type": "string",
+            "description": "The name of the contact person at the company.",
+            "editor": "textfield"
+        },
+        "industry": {
+            "title": "Industry",
+            "type": "string",
+            "description": "(Optional) The industry the company operates in.",
+            "editor": "textfield"
+        },
+        "current_pain_point": {
+            "title": "Current Pain Point",
+            "type": "string",
+            "description": "(Optional) A known pain point or challenge the company is facing.",
+            "editor": "textfield"
+        }
+    },
+    "required": ["company_name", "contact_person"]
+}
