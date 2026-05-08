@@ -1,0 +1,14 @@
+{
+    "title": "Sales Lead Enrichment Output",
+    "type": "object",
+    "properties": {
+        "company_name": { "type": "string" },
+        "contact_person": { "type": "string" },
+        "industry": { "type": "string" },
+        "current_pain_point": { "type": "string" },
+        "gathered_company_info": { "type": "object" },
+        "gathered_person_info": { "type": "object" },
+        "ai_generated_insights": { "type": "string" },
+        "status": { "type": "string" }
+    }
+}
