@@ -2,13 +2,36 @@
     "title": "Sales Lead Enrichment Output",
     "type": "object",
     "properties": {
-        "company_name": { "type": "string" },
-        "contact_person": { "type": "string" },
-        "industry": { "type": "string" },
-        "current_pain_point": { "type": "string" },
-        "gathered_company_info": { "type": "object" },
-        "gathered_person_info": { "type": "object" },
-        "ai_generated_insights": { "type": "string" },
-        "status": { "type": "string" }
+        "company_name": {
+            "title": "Company Name",
+            "type": "string"
+        },
+        "contact_person": {
+            "title": "Contact Person",
+            "type": "string"
+        },
+        "industry": {
+            "title": "Industry",
+            "type": "string"
+        },
+        "current_pain_point": {
+            "title": "Current Pain Point",
+            "type": "string"
+        },
+        "ai_generated_insights": {
+            "title": "AI Generated Insights",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "personalized_email": {
+            "title": "Personalized Email Draft",
+            "type": "string"
+        },
+        "status": {
+            "title": "Enrichment Status",
+            "type": "string"
+        }
     }
 }
